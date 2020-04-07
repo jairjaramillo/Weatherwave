@@ -1,0 +1,50 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "theme";
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+$nFont: monospace;
+$fill: rgba(109, 101, 141, 0.438);
+$bg: black;
+$font: white;
+$border: rgb(156, 156, 156);
+$waveFont: "Major Mono Display", monospace;
+$waveColor1: #e000c2;
+$waveColor2: #1f6892;
+$waveShadow1: -2px 2px $waveColor1;
+$waveShadow2: -2px 2px $waveColor2;
+
+.wave {
+  font-family: $waveFont;
+  text-shadow: $waveShadow1;
+}
+
+.wave-name {
+  font-family: $waveFont;
+  text-shadow: $waveShadow2;
+}
+
+.wave-desc {
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.active-block {
+  background-color: $waveColor2;
+}
+
+.btn-active {
+  color: $waveColor1;
+  font-weight: bolder;
+}
+
+.link {
+  color: $waveColor1;
+}
